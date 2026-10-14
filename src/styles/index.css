@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Design tokens (Tailwind v4, CSS-first).
+   Every token becomes a utility: bg-ivory, text-olive, font-display…
+------------------------------------------------------------------- */
+@theme {
+  --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ivory: #f6f2e9;
+  --color-paper: #ece6d6;
+  --color-sand: #d9cfb8;
+  --color-charcoal: #1d1c19;
+  --color-soot: #12110f;
+  --color-olive: #596040;
+  --color-olive-deep: #3f452d;
+  --color-clay: #96592f;
+  --color-clay-soft: #d29a6e;
+
+  --ease-editorial: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--color-olive);
+    color: var(--color-ivory);
+  }
+
+  :focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+
+  em {
+    font-style: italic;
+  }
+}
+
+@layer components {
+  /* Scroll-reveal (toggled by components/ui/Reveal.jsx) */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 0.9s var(--ease-editorial),
+      transform 0.9s var(--ease-editorial);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Mobile menu entrance */
+  .menu-in {
+    animation: menu-in 0.35s var(--ease-editorial);
+  }
+  @keyframes menu-in {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* Shown when an image file has not been added yet */
+  .img-placeholder {
+    background-color: var(--color-sand);
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent 0 11px,
+      rgb(29 28 25 / 0.06) 11px 12px
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
