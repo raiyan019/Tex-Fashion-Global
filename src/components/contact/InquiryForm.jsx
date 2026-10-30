@@ -232,7 +232,7 @@ function InquiryForm() {
       {/* Always rendered so screen readers announce changes inside it */}
       <div aria-live="polite">
         {status === "unavailable" && (
-          <div className="mt-8 border-l-2 border-clay bg-paper px-5 py-4 text-sm leading-relaxed">
+          <div className="mt-8 border-l-2 border-olive bg-paper px-5 py-4 text-sm leading-relaxed">
             <p className="font-medium">Your message has not been sent.</p>
             <p className="mt-1 text-charcoal/75">
               Online sending is not connected yet. You can send the same details

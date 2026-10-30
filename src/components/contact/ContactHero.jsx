@@ -4,7 +4,7 @@ import Eyebrow from "../ui/Eyebrow.jsx";
 import Reveal from "../ui/Reveal.jsx";
 import { company } from "../../data/company.js";
 
-const linkClass = "transition-colors hover:text-clay-soft";
+const linkClass = "transition-colors hover:text-mint";
 
 function ContactHero() {
   return (
@@ -15,8 +15,7 @@ function ContactHero() {
         </Reveal>
         <Reveal delay={100}>
           <h1 className="mt-8 max-w-4xl font-display text-[clamp(2.75rem,7vw,6rem)] font-light leading-[0.98] tracking-tight">
-            Let’s talk about{" "}
-            <em className="text-clay-soft">your next order.</em>
+            Let’s talk about <em className="text-mint">your next order.</em>
           </h1>
         </Reveal>
         <Reveal delay={200}>

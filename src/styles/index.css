@@ -8,17 +8,14 @@
   --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
   --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
 
-  --color-ivory: #f6f2e9;
-  --color-paper: #ece6d6;
-  --color-sand: #d9cfb8;
-  --color-charcoal: #1d1c19;
-  --color-soot: #12110f;
-  --color-olive: #596040;
-  --color-olive-deep: #3f452d;
-  --color-clay: #96592f;
-  --color-clay-soft: #d29a6e;
-
-  --ease-editorial: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --color-ivory: #f6f7f2;
+  --color-paper: #e9eee5;
+  --color-sand: #d3dccd;
+  --color-charcoal: #16201a;
+  --color-soot: #0b120d;
+  --color-olive: #006b2b;
+  --color-olive-deep: #0a3b1d;
+  --color-mint: #8fd6a4;
 }
 
 @layer base {

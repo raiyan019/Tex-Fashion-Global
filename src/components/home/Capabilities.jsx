@@ -1,12 +1,12 @@
-import { Link } from 'react-router'
-import { ArrowUpRight } from 'lucide-react'
-import Container from '../ui/Container.jsx'
-import Eyebrow from '../ui/Eyebrow.jsx'
-import Reveal from '../ui/Reveal.jsx'
-import Img from '../ui/Img.jsx'
-import TextLink from '../ui/TextLink.jsx'
-import { images } from '../../data/images.js'
-import { productGroups } from '../../data/products.js'
+import { Link } from "react-router";
+import { ArrowUpRight } from "lucide-react";
+import Container from "../ui/Container.jsx";
+import Eyebrow from "../ui/Eyebrow.jsx";
+import Reveal from "../ui/Reveal.jsx";
+import Img from "../ui/Img.jsx";
+import TextLink from "../ui/TextLink.jsx";
+import { images } from "../../data/images.js";
+import { productGroups } from "../../data/products.js";
 
 function Capabilities() {
   return (
@@ -19,14 +19,15 @@ function Capabilities() {
             </Reveal>
             <Reveal delay={100}>
               <h2 className="mt-6 font-display text-[clamp(2.25rem,5vw,4.25rem)] font-light leading-[1.02] tracking-[-0.02em]">
-                Clothing for kids, ladies <em className="text-clay-soft">and men.</em>
+                Clothing for kids, ladies{" "}
+                <em className="text-mint">and men.</em>
               </h2>
             </Reveal>
           </div>
           <Reveal delay={200} className="lg:col-span-4 lg:col-start-9">
             <p className="leading-relaxed text-ivory/70">
-              From T-shirts and polo shirts to denims, padded jackets and uniforms, developed to the
-              buyer’s requirements.
+              From T-shirts and polo shirts to denims, padded jackets and
+              uniforms, developed to the buyer’s requirements.
             </p>
           </Reveal>
         </div>
@@ -47,11 +48,13 @@ function Capabilities() {
                   imgClassName="transition-transform duration-[1400ms] ease-editorial group-hover:scale-105"
                 />
                 <div className="mt-6 flex items-center justify-between">
-                  <h3 className="font-display text-4xl font-light">{group.label}</h3>
+                  <h3 className="font-display text-4xl font-light">
+                    {group.label}
+                  </h3>
                   <ArrowUpRight
                     size={22}
                     aria-hidden="true"
-                    className="text-ivory/60 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-clay-soft"
+                    className="text-ivory/60 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-mint"
                   />
                 </div>
               </Link>
@@ -71,7 +74,7 @@ function Capabilities() {
         </div>
       </Container>
     </section>
-  )
+  );
 }
 
-export default Capabilities
+export default Capabilities;

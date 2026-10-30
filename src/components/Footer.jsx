@@ -36,7 +36,7 @@ function Footer() {
             <p className="mt-5 max-w-sm leading-relaxed text-ivory/70">
               {company.descriptor}, based in {company.city}, {company.country}.
             </p>
-            <ButtonLink to="/contact" variant="clay" className="mt-8">
+            <ButtonLink to="/contact" variant="light" className="mt-8">
               Contact us
             </ButtonLink>
           </div>
@@ -82,7 +82,7 @@ function Footer() {
               <p>
                 <a
                   href={`mailto:${company.email}`}
-                  className={`${linkClass} break-words`}
+                  className={`${linkClass} wrap-break-word`}
                 >
                   {company.email}
                 </a>

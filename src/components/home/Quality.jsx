@@ -1,10 +1,10 @@
-import Container from '../ui/Container.jsx'
-import Eyebrow from '../ui/Eyebrow.jsx'
-import Reveal from '../ui/Reveal.jsx'
-import Img from '../ui/Img.jsx'
-import TextLink from '../ui/TextLink.jsx'
-import { images } from '../../data/images.js'
-import { qualityPrinciples } from '../../data/company.js'
+import Container from "../ui/Container.jsx";
+import Eyebrow from "../ui/Eyebrow.jsx";
+import Reveal from "../ui/Reveal.jsx";
+import Img from "../ui/Img.jsx";
+import TextLink from "../ui/TextLink.jsx";
+import { images } from "../../data/images.js";
+import { qualityPrinciples } from "../../data/company.js";
 
 function Quality() {
   return (
@@ -16,13 +16,15 @@ function Quality() {
           </Reveal>
           <Reveal delay={100}>
             <h2 className="mt-6 font-display text-[clamp(2.25rem,4.6vw,4rem)] font-light leading-[1.04] tracking-[-0.02em]">
-              Production monitored at <em className="text-clay-soft">every stage.</em>
+              Production monitored at{" "}
+              <em className="text-mint">every stage.</em>
             </h2>
           </Reveal>
           <Reveal delay={200}>
             <p className="mt-6 max-w-lg leading-relaxed text-ivory/75">
-              Our team follows production from start to finish, and inspections at various stages confirm
-              that quality conforms to the requirement.
+              Our team follows production from start to finish, and inspections
+              at various stages confirm that quality conforms to the
+              requirement.
             </p>
           </Reveal>
 
@@ -41,7 +43,9 @@ function Quality() {
           </Reveal>
 
           <Reveal delay={300} className="mt-10">
-            <TextLink to="/manufacturing-quality">See the production workflow</TextLink>
+            <TextLink to="/manufacturing-quality">
+              See the production workflow
+            </TextLink>
           </Reveal>
         </div>
 
@@ -50,7 +54,7 @@ function Quality() {
         </Reveal>
       </Container>
     </section>
-  )
+  );
 }
 
-export default Quality
+export default Quality;
